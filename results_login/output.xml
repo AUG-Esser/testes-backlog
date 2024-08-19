@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-08-19T19:52:26.192814" rpa="false" schemaversion="5">
+<suite id="s1" name="Bac login" source="C:\Users\augus_q5w6aqg\Desktop\Automação_HG\Bac_login">
+<suite id="s1-s1" name="Era para estar dando fail é" source="C:\Users\augus_q5w6aqg\Desktop\Automação_HG\Bac_login\Era_para_estar_dando_fail_é.robot">
+<test id="s1-s1-t1" name="Cenario 1 Cadastro mal sucedido" line="61">
+<kw name="abrir chrome e acessar o site">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:52:26.802041" level="INFO">Opening browser 'chrome' to base url 'https://pbstech.net/projetos/ludiwin-v2/index.php'.</msg>
+<arg>https://pbstech.net/projetos/ludiwin-v2/index.php</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-19T19:52:26.802041" elapsed="8.109409"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-19T19:52:34.911450" elapsed="1.138360"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:52:36.673659" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-08-19T19:52:36.049810" elapsed="0.623849"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:52:36.675612" level="INFO">Clicking element '//html/body/nav/div/div/form/a[1]'.</msg>
+<arg>${button_login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T19:52:36.673659" elapsed="0.718820"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:52:26.800087" elapsed="10.592392"/>
+</kw>
+<kw name="Preencher campos de forma errada">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:52:38.163320" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-08-19T19:52:37.402249" elapsed="0.761071"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:52:38.164297" level="INFO">Typing text 'zénimguem@gmail.com' into text field '//input[@id="email"]'.</msg>
+<arg>${input_email}</arg>
+<arg>zénimguem@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T19:52:38.163320" elapsed="0.357325"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:52:38.948260" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-08-19T19:52:38.521620" elapsed="0.426640"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:52:38.950212" level="INFO">Typing text '123456' into text field '//input[@id="senha"]'.</msg>
+<arg>${input_senha}</arg>
+<arg>123456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T19:52:38.949237" elapsed="0.141928"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:52:37.400290" elapsed="1.691851"/>
+</kw>
+<kw name="Clicar no botão submit">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:52:39.106784" level="INFO">Clicking element '//button[@class="btn btn-primario w-100"]'.</msg>
+<arg>${button_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T19:52:39.105808" elapsed="0.228453"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:52:39.104831" elapsed="0.230406"/>
+</kw>
+<kw name="Fechar Navegador">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-19T19:52:39.337189" elapsed="2.646152"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:52:39.336213" elapsed="2.648106"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:52:26.798136" elapsed="15.187160"/>
+</test>
+<status status="PASS" start="2024-08-19T19:52:26.279708" elapsed="15.707541"/>
+</suite>
+<suite id="s1-s2" name="Login fail vazio email" source="C:\Users\augus_q5w6aqg\Desktop\Automação_HG\Bac_login\Login_fail_vazio_email.robot">
+<test id="s1-s2-t1" name="Cenario 1 Cadastro mal sucedido" line="57">
+<kw name="abrir chrome e acessar o site">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:52:42.004821" level="INFO">Opening browser 'chrome' to base url 'https://pbstech.net/projetos/ludiwin-v2/index.php'.</msg>
+<arg>https://pbstech.net/projetos/ludiwin-v2/index.php</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-19T19:52:42.003846" elapsed="6.762550"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-19T19:52:48.767372" elapsed="0.171829"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:52:49.385366" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-08-19T19:52:48.939201" elapsed="0.446165"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:52:49.386343" level="INFO">Clicking element '//html/body/nav/div/div/form/a[1]'.</msg>
+<arg>${button_login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T19:52:49.385366" elapsed="0.358301"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:52:42.002869" elapsed="7.740798"/>
+</kw>
+<kw name="Preencher campos de forma errada">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:52:50.230455" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-08-19T19:52:49.749524" elapsed="0.480931"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:52:50.231433" level="INFO">Typing text '123456' into text field '//input[@id="senha"]'.</msg>
+<arg>${input_senha}</arg>
+<arg>123456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T19:52:50.231433" elapsed="0.287030"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:52:49.748549" elapsed="0.769914"/>
+</kw>
+<kw name="Clicar no botão submit">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:52:50.520415" level="INFO">Clicking element '//button[@class="btn btn-primario w-100"]'.</msg>
+<arg>${button_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T19:52:50.520415" elapsed="0.171827"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:52:50.519437" elapsed="0.172805"/>
+</kw>
+<kw name="esperar prova">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${r.e}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-19T19:52:50.696148" elapsed="0.446168"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:52:52.162542" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-08-19T19:52:51.143300" elapsed="1.019242"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-19T19:52:55.164424" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-19T19:52:52.163518" elapsed="3.000906"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:52:50.695172" elapsed="4.469252"/>
+</kw>
+<kw name="Fechar Navegador">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-19T19:52:55.166370" elapsed="2.379160"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:52:55.165369" elapsed="2.380161"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:52:42.000916" elapsed="15.546564"/>
+</test>
+<status status="PASS" start="2024-08-19T19:52:41.989200" elapsed="15.560232"/>
+</suite>
+<suite id="s1-s3" name="Login fail vazio senha" source="C:\Users\augus_q5w6aqg\Desktop\Automação_HG\Bac_login\Login_fail_vazio_senha.robot">
+<test id="s1-s3-t1" name="Cenario 1 Cadastro mal sucedido" line="59">
+<kw name="abrir chrome e acessar o site">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:52:57.568958" level="INFO">Opening browser 'chrome' to base url 'https://pbstech.net/projetos/ludiwin-v2/index.php'.</msg>
+<arg>https://pbstech.net/projetos/ludiwin-v2/index.php</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-19T19:52:57.568958" elapsed="6.355836"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-19T19:53:03.925772" elapsed="0.131811"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:53:04.333142" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-08-19T19:53:04.057583" elapsed="0.276535"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:53:04.335097" level="INFO">Clicking element '//html/body/nav/div/div/form/a[1]'.</msg>
+<arg>${button_login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T19:53:04.334118" elapsed="0.281174"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:52:57.567982" elapsed="7.047310"/>
+</kw>
+<kw name="Preencher campos de forma errada">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:53:05.026795" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-08-19T19:53:04.620174" elapsed="0.406621"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:53:05.027770" level="INFO">Typing text 'zénimguem@gmail.com' into text field '//input[@id="email"]'.</msg>
+<arg>${input_email}</arg>
+<arg>zénimguem@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T19:53:05.027770" elapsed="0.214786"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:53:05.600841" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-08-19T19:53:05.242556" elapsed="0.358285"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:53:04.618221" elapsed="0.982620"/>
+</kw>
+<kw name="Clicar no botão submit">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:53:05.603771" level="INFO">Clicking element '//button[@class="btn btn-primario w-100"]'.</msg>
+<arg>${button_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T19:53:05.602795" elapsed="0.114205"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:53:05.602795" elapsed="0.114205"/>
+</kw>
+<kw name="esperar prova">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${r.e}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-19T19:53:05.720905" elapsed="0.077125"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:53:06.343374" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-08-19T19:53:05.799008" elapsed="0.544366"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-19T19:53:09.345327" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-19T19:53:06.343374" elapsed="3.001953"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:53:05.719929" elapsed="3.625398"/>
+</kw>
+<kw name="Fechar Navegador">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-19T19:53:09.347278" elapsed="2.441453"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:53:09.346304" elapsed="2.442427"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:52:57.566030" elapsed="14.223571"/>
+</test>
+<status status="PASS" start="2024-08-19T19:52:57.553338" elapsed="14.239198"/>
+</suite>
+<suite id="s1-s4" name="Login sucess" source="C:\Users\augus_q5w6aqg\Desktop\Automação_HG\Bac_login\Login_sucess.robot">
+<test id="s1-s4-t1" name="Cenario 1 Cadastro bem sucedido" line="63">
+<kw name="abrir chrome e acessar site">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:53:11.808156" level="INFO">Opening browser 'chrome' to base url 'https://pbstech.net/projetos/ludiwin-v2/index.php'.</msg>
+<arg>https://pbstech.net/projetos/ludiwin-v2/index.php</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-19T19:53:11.808156" elapsed="5.115781"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-19T19:53:16.923937" elapsed="0.141570"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:53:17.379366" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-08-19T19:53:17.066480" elapsed="0.312886"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:53:17.380345" level="INFO">Clicking element '//html/body/nav/div/div/form/a[1]'.</msg>
+<arg>${button_login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T19:53:17.380345" elapsed="0.367544"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:53:11.807181" elapsed="5.941686"/>
+</kw>
+<kw name="preencher campos">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:53:18.180405" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-08-19T19:53:17.751794" elapsed="0.428611"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:53:18.181381" level="INFO">Typing text 'zenimguem@gmail.com' into text field '//input[@id="email"]'.</msg>
+<arg>${input_email}</arg>
+<arg>zenimguem@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T19:53:18.181381" elapsed="0.227478"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:53:18.795974" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-08-19T19:53:18.408859" elapsed="0.387115"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:53:18.796952" level="INFO">Typing text '123456' into text field '//input[@id="senha"]'.</msg>
+<arg>${input_senha}</arg>
+<arg>123456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T19:53:18.796952" elapsed="0.192330"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:53:17.750819" elapsed="1.238463"/>
+</kw>
+<kw name="clicar em submit">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:53:18.996114" level="INFO">Clicking element '//button[@class="btn btn-primario w-100"]'.</msg>
+<arg>${button_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T19:53:18.995140" elapsed="0.525245"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-19T19:53:21.521490" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-19T19:53:19.520385" elapsed="2.001105"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:53:21.697043" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-08-19T19:53:21.521490" elapsed="0.176528"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-19T19:53:23.699261" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-19T19:53:21.698018" elapsed="2.001243"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:53:18.994164" elapsed="4.705097"/>
+</kw>
+<kw name="esperar prova">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${r.e}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-19T19:53:23.701220" elapsed="0.052718"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-08-19T19:53:23.995668" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-08-19T19:53:23.753938" elapsed="0.241730"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:53:23.700242" elapsed="0.295426"/>
+</kw>
+<kw name="Fechar Navegador">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-19T19:53:23.999574" elapsed="2.382610"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:53:23.998598" elapsed="2.383586"/>
+</kw>
+<status status="PASS" start="2024-08-19T19:53:11.806203" elapsed="14.576950"/>
+</test>
+<status status="PASS" start="2024-08-19T19:53:11.795462" elapsed="14.589643"/>
+</suite>
+<status status="PASS" start="2024-08-19T19:52:26.198676" elapsed="60.189361"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Bac login">Bac login</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Era para estar dando fail é">Bac login.Era para estar dando fail é</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Login fail vazio email">Bac login.Login fail vazio email</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="Login fail vazio senha">Bac login.Login fail vazio senha</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s4" name="Login sucess">Bac login.Login sucess</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
