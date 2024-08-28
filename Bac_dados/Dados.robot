@@ -19,55 +19,56 @@ ${r.e}                       //html/body/main/section/div/div[2]/div[2]/div
 *** Keywords ***
 
 abrir chrome e acessar site
-    Open Browser     https://pbstech.net/projetos/ludiwin-v2/   chrome
+    Open Browser             https://pbstech.net/projetos/ludiwin-v2/   chrome
 
     Maximize Browser Window
 
     Capture Page Screenshot
 
-    Click Element    ${button_criar}
+    Click Element            ${button_criar}
 
 
 preencher campos
     Capture Page Screenshot
 
-    Input Text       ${input_email}      zenimguem@gmail.com
+    Input Text               ${input_email}      zenimguem@gmail.com
     
     Capture Page Screenshot
 
-    Input Text       ${input_senha}      123456
+    Input Text               ${input_senha}      123456
 
     Capture Page Screenshot
 
-    Input Text       ${input_data}       10072007
+    Input Text               ${input_data}       10072007
 
     Capture Page Screenshot
 
-    Input Text       ${input_resenha}    123456
+    Input Text               ${input_resenha}    123456
 
     Capture Page Screenshot
 
 clicar em submit
-    Click Element    ${button_submit}
+    Click Element            ${button_submit}
 
     Capture Page Screenshot
+    
 #----------------------------------------------------------------------------------------------------------------------------#
 
 Clicar na pessoa
-    Click Element    ${button_pessoa}
+    Click Element            ${button_pessoa}
     Capture Page Screenshot
 
 
 
 Clicar no botão de dados
-    Click Element    ${dados_1}
+    Click Element            ${dados_1}
     Capture Page Screenshot
     Sleep    5s
 
 
 
 Clicar nas informações
-    Click Element    ${dados_2}
+    Click Element            ${dados_2}
     Sleep    5s
 
 
